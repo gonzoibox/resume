@@ -265,9 +265,6 @@
     box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
     transition: box-shadow 0.2s linear;
   }
-  .page[style^="border-color"] {
-    padding: 0.5em;
-  }
   .page[style^="border-color"]:before {
     content: " ";
     display: block;
