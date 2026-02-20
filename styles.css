@@ -266,7 +266,7 @@
     transition: box-shadow 0.2s linear;
   }
   .page[style^="border-color"] {
-    padding: 4.5em;
+    padding: 0.5em;
   }
   .page[style^="border-color"]:before {
     content: " ";
