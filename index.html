@@ -1,288 +1,393 @@
-
-index-v2.html
-
-100 %
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anton Davydovych — Resume</title>
-  <style>
-    :root {
-      --text-main: #1a202c;
-      --text-muted: #4a5568;
-      --accent: #1e3a8a;
-      --border: #cbd5e0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="theme-color" content="white" />
+    <meta name="description" content="My very own personal website-resume." />
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="google" content="notranslate" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="robots" content="index,follow" />
+    <meta name="subject" content="This is my website-résumé." />
+    <meta
+      property="og:description"
+      content="— Hello! I’m an experienced Angular Developer.
+      Also, I`am keen on Application Security."
+    />
+    <meta property="og:image:alt" content="Screenshot of the resume homepage" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="1800" />
+    <meta property="og:image:width" content="2880" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Anton Davydovych — Résumé" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gonzoibox.github.io/homepage/" />
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--text-main);
-      background-color: #f7fafc;
-      line-height: 1.42;
-      font-size: 13.5px;
-    }
-
-    .page {
-      max-width: 800px;
-      margin: 24px auto;
-      background: #ffffff;
-      padding: 36px 44px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-    }
-
-    header {
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 12px;
-      margin-bottom: 16px;
-    }
-
-    h1 {
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      color: var(--text-main);
-      margin-bottom: 4px;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-
-    .contact-bar {
-      font-size: 12.5px;
-      color: var(--text-muted);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px 12px;
-    }
-
-    .contact-bar a {
-      color: var(--text-muted);
-      text-decoration: none;
-    }
-
-    .contact-bar a:hover {
-      text-decoration: underline;
-      color: var(--accent);
-    }
-
-    section {
-      margin-bottom: 15px;
-    }
-
-    h2 {
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 3px;
-      margin-bottom: 8px;
-    }
-
-    .summary p {
-      color: var(--text-main);
-    }
-
-    .skills-list {
-      list-style: none;
-    }
-
-    .skills-list li {
-      margin-bottom: 5px;
-    }
-
-    .skills-list strong {
-      color: var(--text-main);
-    }
-
-    .job {
-      margin-bottom: 12px;
-    }
-
-    .job-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 4px;
-    }
-
-    .job-title {
-      font-weight: 700;
-      font-size: 14px;
-      color: var(--text-main);
-    }
-
-    .job-company {
-      font-weight: 600;
-      color: var(--text-muted);
-    }
-
-    .job-date {
-      font-size: 12.5px;
-      color: var(--text-muted);
-      font-style: italic;
-    }
-
-    ul.bullets {
-      padding-left: 18px;
-    }
-
-    ul.bullets li {
-      margin-bottom: 3.5px;
-    }
-
-    .earlier-career {
-      font-size: 12.5px;
-      color: var(--text-muted);
-      margin-top: 6px;
-    }
-
-    .edu-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-
-    .edu-header a {
-      color: var(--text-main);
-      text-decoration: none;
-    }
-
-    .edu-header a:hover {
-      text-decoration: underline;
-      color: var(--accent);
-    }
-
-    @media print {
-      body {
-        background: #ffffff;
-        font-size: 12.5px;
-      }
-
-      .page {
-        margin: 0;
-        padding: 0;
-        box-shadow: none;
-        max-width: 100%;
-      }
-
-      @page {
-        size: A4;
-        margin: 12mm 14mm;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="page">
-    <header>
-      <h1>ANTON DAVYDOVYCH</h1>
-      <div class="subtitle">Frontend / Software Engineer (TypeScript, Angular, Node.js) | Transitioning to Application Security</div>
-      <div class="contact-bar">
-        <span>Email: <a href="mailto:gonzoibox@gmail.com">gonzoibox@gmail.com</a></span>
-        <span>•</span>
-        <span>Phone: +38 (096) 829-14-14</span>
-        <span>•</span>
-        <span>Telegram: <a href="https://t.me/gonzoibox" target="_blank" rel="noopener noreferrer">@gonzoibox</a></span>
-        <span>•</span>
-        <span>LinkedIn: <a href="https://www.linkedin.com/in/anton-davydovych-28b6173a3/?locale=en/" target="_blank" rel="noopener noreferrer">linkedin.com/in/anton-davydovych</a></span>
-        <span>•</span>
-        <span>GitHub: <a href="https://github.com/gonzoibox" target="_blank" rel="noopener noreferrer">github.com/gonzoibox</a></span>
-        <span>•</span>
-        <span>Remote</span>
-      </div>
-    </header>
-
-    <section class="summary">
-      <h2>Summary</h2>
-      <p>
-        Software Engineer with 5+ years of commercial experience building enterprise web applications using Angular, TypeScript, and Node.js. Transitioning into Application Security (AppSec), leveraging deep architectural knowledge of client-side applications, REST APIs, and authentication flows to identify vulnerabilities, triage SAST/DAST findings, and deliver actionable remediation guidance to development teams.
-      </p>
-    </section>
-
-    <section>
-      <h2>Technical &amp; Security Skills</h2>
-      <ul class="skills-list">
-        <li><strong>Application Security:</strong> OWASP Top 10, OWASP ASVS, Vulnerability Triage (SAST / DAST / SCA), Secure Code Review, Authentication &amp; Authorization (OAuth2, OIDC, JWT), XSS, CSRF, IDOR/BOLA, SQLi, SSRF, CORS, Content Security Policy (CSP), CVSS / CWE classification.</li>
-        <li><strong>Security Tooling &amp; Labs:</strong> Burp Suite, OWASP ZAP, Nmap, Semgrep, OWASP Dependency-Track, GitLab CI Security Scanners, PortSwigger Web Security Academy, Hack The Box.</li>
-        <li><strong>Software Development:</strong> TypeScript, JavaScript (ES6+), Angular, RxJS, Node.js, Express, REST APIs, HTML5, CSS3/SCSS, Unit Testing (Jest, Jasmine).</li>
-        <li><strong>Infrastructure &amp; DevOps:</strong> Linux (CLI, Bash), Git, Docker, CI/CD pipelines.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Professional Experience</h2>
-
-      <div class="job">
-        <div class="job-header">
-          <div><span class="job-title">Software Developer (Angular / TypeScript)</span> | <span class="job-company">DXC Luxoft</span></div>
-          <div class="job-date">November 2020 – Present</div>
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+    />
+    <title>Résumé - Anton Davydovych</title>
+    <link
+      rel="me"
+      href="https://www.facebook.com/anton.davidovich.5"
+      type="text/html"
+    />
+    <link rel="me" href="mailto:gonzoibox@gmail.com" />
+    <link rel="me" href="tel:+380968291414" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="page" style="border-color: midnightblue">
+          <div class="stackable grid">
+            <div class="row">
+              <div class="three wide center aligned column">
+                <div class="avatar-wrapper">
+                  <object
+                    class="avatar"
+                    data="./assets/images/avatar.png"
+                    role="img"
+                    aria-label="My profile picture"
+                  ></object>
+                </div>
+              </div>
+              <div class="thirteen wide column">
+                <div class="stackable grid">
+                  <div class="sixteen wide column">
+                    <h1 class="name">Anton Davydovych</h1>
+                    <div class="job">Software Developer (Angular)</div>
+                    <ul class="contacts">
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/anton-davydovych-28b6173a3/?locale=en/"
+                          rel="noopener noreferrer"
+                          class="linkedin"
+                          target="_blank"
+                        >
+                          <svg
+                            class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                            ></path>
+                          </svg>
+                          <span>anton-davydovych</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://t.me/gonzoibox"
+                          rel="noopener noreferrer"
+                          class="telegram"
+                          target="_blank"
+                        >
+                          <svg
+                            class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                            ></path>
+                          </svg>
+                          <span>gonzoibox</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:gonzoibox@gmail.com"
+                          rel="noopener noreferrer"
+                          class="mail"
+                          target="_blank"
+                        >
+                          <svg
+                            class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                            ></path>
+                          </svg>
+                          <span>gonzoibox@gmail.com</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a 
+                          href="tel:+380968291414" 
+                          rel="noopener noreferrer" 
+                          class="phone"
+                          target="_blank"
+                        >
+                          <svg
+                            class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
+                            ></path>
+                          </svg>
+                          <span>+38 (096) 829-14-14</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sixteen wide mobile only column">
+                    <div class="divider"></div>
+                  </div>
+                  <div class="sixteen wide column">
+                    <h2>Résumé</h2>
+                    <p>
+                      Hello! <br>
+                      I am a software developer with 5+ years of experience specializing in Angular and TypeScript. 
+                      Transitioning into Application Security, leveraging a deep understanding of frontend architectures, 
+                      API security, and the DOM to identify and mitigate client-side vulnerabilities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="sixteen wide column">
+                <div class="fat divider"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="ten wide column">
+                <section>
+                  <h3>Experience</h3>
+                  <h6>Now</h6>
+                  <ul class="timeline">
+                    <li class="highlighted">
+                      <p><em>November 2020 – present</em></p>
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="software-developer" />
+                          <label for="software-developer" class="summary">
+                            <strong>Software Developer</strong> at
+                            <strong>
+                              <a href="https://www.luxoft.com/" rel="noopener noreferrer" target="_blank">DXC Luxoft</a>
+                            </strong>
+                          </label>
+                          <div>
+                            <ul>
+                              <li>
+                                Writing clean, maintainable, and scalable TypeScript code using Angular framework
+                              </li>
+                              <li>
+                                Integrating RESTful APIs and third-party libraries
+                              </li>
+                              <li>
+                                Optimizing application load times and improving performance using techniques like lazy loading, change detection strategy
+                              </li>
+                              <li>
+                                Implemented strict Content Security Policies (CSP) and secure HTTP headers to mitigate XSS and Clickjacking risks.
+                              </li>
+                               <li>
+                                Conducted internal code reviews focused on identifying OWASP Top 10 vulnerabilities in TypeScript/Angular components.
+                              </li>
+                              <li>
+                                Writing unit tests using Jest, Mocha, Jasmine, or framework-specific tools
+                              </li>
+                              <li>
+                                Working in an Agile environment, participating in daily stand-ups, sprint planning, and retrospective meetings
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h6>Back then</h6>
+                  <ul class="timeline">
+                    <li>
+                      <p><em>March 2020 – September 2020</em></p>
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="frontend-developer" />
+                          <label for="frontend-developer" class="summary">
+                            <strong>Front-End Developer</strong> at
+                            <strong><a href="https://procode.com.ua/" rel="noopener noreferrer" target="_blank">ProCode IT Studio</a></strong>
+                          </label>
+                          <div>
+                            <ul>
+                              <li>
+                                Designing and implementing user interfaces using JavaScript, HTML and CSS
+                              </li>
+                              <li>
+                                Creating reusable UI components and modules following best practices
+                              </li>
+                              <li>
+                                Writing SEO-friendly code and optimizing web pages for better search engine rankings
+                              </li>
+                              <li>
+                                Ensuring proper integration with Google Search Console and Google Analytics
+                              </li>
+                              <li>
+                                Monitoring SEO performance metrics and making data-driven improvements
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h6>Way back then</h6>
+                  <ul class="timeline">
+                    <li>
+                      <p><em>April 2019 – January 2020</em></p>
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="js-developer" />
+                          <label for="js-developer" class="summary">
+                            <strong>Javascript Developer (Angular)</strong> at
+                            <strong><a href="https://onseostudio.com/" rel="noopener noreferrer" target="_blank">ONSEO</a></strong>
+                          </label>
+                          <div>
+                            <ul>
+                              <li>
+                                Develop and maintain web applications using Angular and TypeScript
+                              </li>
+                              <li>
+                                Debugging and troubleshooting performance issues
+                              </li>
+                              <li>
+                                Managing application state using services, RxJS and state management libraries (NgRx)
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><em>March 2018 – March 2019</em></p>
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="seo-specialist" />
+                          <label for="seo-specialist" class="summary">
+                            <strong>SEO specialist</strong> at
+                            <strong><a href="https://exponexy.com/" rel="noopener noreferrer" target="_blank">Exponexy LTD</a></strong>
+                          </label>
+                          <div>
+                            <ul>
+                              <li>
+                                Complete advanced on-page and technical SEO for
+                                websites
+                              </li>
+                              <li>
+                                Develop optimization strategies that increase
+                                the company's search engine results rankings
+                              </li>
+                              <li>
+                                Research SEO keywords to use throughout the
+                                company's website and marketing materials
+                              </li>
+                              <li>
+                                Monitor daily performance metrics to understand
+                                SEO strategy performance
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><em>March 2017 – January 2018</em></p>
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="linkbuilding-specialist" />
+                          <label for="linkbuilding-specialist" class="summary">
+                            <strong>SEO Link Building & Outreach Specialist</strong>
+                            at
+                            <strong><a href="https://devellar.com/" rel="noopener noreferrer" target="_blank">Devellar</a></strong>
+                          </label>
+                          <div>
+                            <ul>
+                              <li>Plan and execute linkbuilding strategies</li>
+                              <li>Report on linkbuilding performance</li>
+                              <li>
+                                Search for websites where to acquire backlinks
+                              </li>
+                              <li>
+                                Contact website owners, bloggers, and social
+                                media folks
+                              </li>
+                              <li>
+                                Competitive research & get pretty backlinks
+                              </li>
+                              <li>
+                                Communicate with content writers, SEO
+                                specialists, and marketing managers to build the
+                                most
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="six wide column">
+                <section>
+              <h3>Skills</h3>
+            
+              <h4 class="small-heading">Development</h4>
+              <p class="tags small bulleted">
+                <span class="tag">ANGULAR</span>
+                <span class="tag">TYPESCRIPT</span>
+                <span class="tag">JAVASCRIPT</span>
+                <span class="tag">RXJS</span>
+                <span class="tag">NODEJS</span>
+                <span class="tag">EXPRESS</span>
+                <span class="tag">UNIT TESTING (JEST/JASMINE)</span>
+                <span class="tag">LINUX</span>
+                <span class="tag">HTML5 /CSS3 / SCSS</span>
+              </p>
+              
+              <h4 class="small-heading">Security</h4>
+              <p class="tags small bulleted">
+                <span class="tag">OWASP TOP 10</span>
+                <span class="tag">WEB SECURITY (XSS, CSRF, CORS)</span>
+                <span class="tag">SECURE CODE REVIEW</span>
+                <span class="tag">AUTHENTICATION (OAUTH2, JWT)</span>
+                <span class="tag">BURP SUITE (BASICS)</span>
+                <span class="tag">CONTENT SECURITY POLICY (CSP)</span>
+              </p>
+            </section>
+                <hr />
+                <section>
+                  <h3>Education</h3>
+                  <ul class="timeline">
+                    <li>
+                      <div>
+                        <strong>
+                          Master of Science in Electrical Engineering
+                          (Department of Electrical and Computer Engineering)
+                          Graduated: [2006]
+                        </strong>
+                        <br />
+                        at
+                        <a href="https://nmu.org.ua/en/" rel="noopener noreferrer" target="_blank">
+                          <strong>Dnipro University of Technology</strong>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+                
+              </div>
+            </div>
+          </div>
         </div>
-        <ul class="bullets">
-          <li>Develop and maintain complex enterprise web applications for large-scale industrial and energy domain systems within an Agile/SCRUM cross-functional team.</li>
-          <li>Implemented strict Content Security Policies (CSP) and secure HTTP headers to mitigate XSS and Clickjacking risks across client-facing modules.</li>
-          <li>Conducted internal peer code reviews focused on identifying OWASP Top 10 vulnerabilities, dependency hygiene, and unsafe data flows in TypeScript/Angular components.</li>
-          <li>Architect secure frontend state management (RxJS) and REST API integrations, enforcing strict TypeScript typing, input validation, and role-based access control (OAuth2 / JWT).</li>
-          <li>Write comprehensive unit test suites (Jest/Jasmine) and optimize application performance using lazy loading and targeted change detection strategies.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-header">
-          <div><span class="job-title">Front-End Developer</span> | <span class="job-company">ProCode IT Studio</span></div>
-          <div class="job-date">March 2020 – September 2020</div>
-        </div>
-        <ul class="bullets">
-          <li>Built responsive single-page applications (SPAs) using Angular, TypeScript, and SCSS, creating reusable UI components and optimizing client-side performance.</li>
-          <li>Collaborated with backend developers to design secure REST API contracts and handle error states without exposing sensitive system details.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-header">
-          <div><span class="job-title">JavaScript Developer (Angular)</span> | <span class="job-company">ONSEO</span></div>
-          <div class="job-date">April 2019 – January 2020</div>
-        </div>
-        <ul class="bullets">
-          <li>Developed modular web applications using Angular, TypeScript, and RxJS/NgRx state management, adhering to clean code principles and Git workflow standards.</li>
-        </ul>
-      </div>
-
-      <div class="earlier-career">
-        <strong>Earlier Career:</strong> SEO &amp; Digital Outreach Specialist at Exponexy LTD and Devellar (2017 – 2019) — experience in technical web analytics, HTTP protocols, and search engine architecture.
-      </div>
-    </section>
-
-    <section>
-      <h2>Security Training &amp; Certifications</h2>
-      <ul class="bullets">
-        <li><strong>CompTIA PenTest+ (PT0-003) Coursework</strong> — Udemy (Completed July 2026 | Credential ID: <code>UC-e78e50f5-6db8-4216-9639-5855399030b8</code>): Covered penetration testing methodologies, vulnerability scanning, web application exploitation, and reporting.</li>
-        <li><strong>PortSwigger Web Security Academy</strong> — Hands-on practice exploiting and remediating XSS, SQL Injection, CSRF, SSRF, IDOR/BOLA, and authentication vulnerabilities.</li>
-        <li><strong>Hack The Box (HTB)</strong> — Practical labs in network enumeration (Nmap), Linux privilege escalation, and web vulnerability assessment.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <div class="edu-header">
-        <div><strong>Master of Science in Electrical Engineering</strong> <em>(Department of Electrical and Computer Engineering)</em> — <a href="https://nmu.org.ua/en/" target="_blank" rel="noopener noreferrer">Dnipro University of Technology</a></div>
-        <div class="job-date">Graduated: 2006</div>
-      </div>
-    </section>
-  </div>
-</body>
+      </article>
+    </main>
+  </body>
 </html>
-index-v2.html. На экране.
