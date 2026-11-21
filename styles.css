@@ -10,7 +10,7 @@
     box-sizing: inherit;
   }
   html {
-    font-size: 15rpx;
+    font-size: 15px;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     box-sizing: border-box;
@@ -59,7 +59,7 @@
   }
   h2 + p {
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     margin-bottom: 0.2em;
   }
   h3 {
@@ -68,7 +68,8 @@
     letter-spacing: 0.15em;
   }
   h4 {
-    font-size: 1.125rem;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
   }
   h5 {
     font-size: 1rem;
@@ -77,10 +78,10 @@
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.75em 0;
   }
   section {
-    padding: 1em 0;
+    padding: 0.85em 0;
   }
   p {
     margin: 0 0 1em;
@@ -96,7 +97,7 @@
     font-weight: 600;
   }
   small {
-    font-size: 80%;
+    font-size: 85%;
   }
   ul,
   ol {
@@ -142,12 +143,11 @@
     font-weight: normal;
   }
   a {
-    color: blue;
+    color: #1a4b8c;
     background-color: transparent;
     text-decoration: none;
   }
-  a[rel="external"]:not(.label):hover,
-  a.language:hover span {
+  a:hover {
     text-decoration: underline;
   }
   code {
@@ -155,7 +155,7 @@
     padding: 0em 0.25em;
     border-radius: 3px;
     background: #EEEEEE;
-    font-size: 95%;
+    font-size: 90%;
   }
   
   /* Prevent `sub` and `sup` elements from affecting the line height in all browsers */
@@ -198,14 +198,14 @@
     text-transform: none;
   }
   
-  /* Correct the inability to style clickable types in iOS and Safari	*/
+  /* Correct the inability to style clickable types in iOS and Safari */
   button,
   [type="button"] {
     -webkit-appearance: button;
     appearance: button;
   }
   
-  /* Remove the inner border and padding in Firefox	*/
+  /* Remove the inner border and padding in Firefox */
   button::-moz-focus-inner,
   [type="button"]::-moz-focus-inner {
     border-style: none;
@@ -224,7 +224,7 @@
     padding: 0;
   }
   
-  /* Utiltities */
+  /* Utilities */
   .nowrap {
     white-space: nowrap;
   }
@@ -278,11 +278,6 @@
   
   /**
    * # Semantic UI - 2.4.2
-   * https://github.com/Semantic-Org/Semantic-UI
-   * https://www.semantic-ui.com/
-   * Copyright 2014 Contributors
-   * Released under the MIT license
-   * https://opensource.org/licenses/MIT
    */
   .grid {
     display: flex;
@@ -290,10 +285,6 @@
     flex-wrap: wrap;
     align-items: stretch;
     padding: 0;
-    /**
-     * Temporary hack to be sure avatar
-     * is rendered on print preview
-     */
     display: block !important;
   }
   .grid .grid {
@@ -314,7 +305,6 @@
   }
   
   /* Columns */
-  /* Standard 16 column */
   .grid > .column:not(.row),
   .grid > .row > .column {
     position: relative;
@@ -329,8 +319,6 @@
     padding-right: 1rem;
   }
   
-  /* Columns */
-  /* Vertical padding when no rows */
   .grid > .column:not(.row) {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -340,7 +328,6 @@
     margin-bottom: 0;
   }
   
-  /* Assume full width with one column */
   .grid > .column:only-child,
   .grid > .row > .column:only-child {
     width: 100%;
@@ -545,6 +532,8 @@
   /* Job */
   .job {
     margin-bottom: 0.25rem;
+    font-weight: 500;
+    color: midnightblue;
   }
   
   /* Contacts */
@@ -752,22 +741,23 @@
     display: none;
   }
   .timeline > li:not(:last-child) {
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
   }
   .timeline > li p {
-    margin: 0;
+    margin: 0 0 0.25em 0;
   }
   
   /* Tags */
   .tags.small {
-    font-size: 0.88em;
+    font-size: 0.85em;
+    line-height: 1.55;
   }
   .tags.bulleted .tag:not(:last-child):after {
     content: "●";
     display: inline-block;
     font-family: "Arial";
-    font-size: 1rem;
-    margin: 0 0.25em 0 0.25em;
+    font-size: 0.85rem;
+    margin: 0 0.3em 0 0.3em;
   }
   
   /* Print */
@@ -785,13 +775,16 @@
       padding: 0;
     }
     .contacts {
-      margin-top: 1em;
+      margin-top: 0.5em;
     }
     .contacts li a.website {
       display: block;
     }
     .credits {
       display: none;
+    }
+    .details > div {
+      display: block !important;
     }
   }
   
